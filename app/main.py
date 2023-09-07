@@ -8,14 +8,15 @@ app = Flask(__name__)
 client = WebClient(token=os.getenv("SLACK_BOT_TOKEN"))
 
 # メッセージと対応するチャンネルIDの辞書
+# 生成したスタンプに対応するSlackのチャンネルIDを記入してください（書き方は スタンプ名 : チャンネルID）
 channels = {
-  ":tag_ai:": "C05GMNGJ61H",
-  ":tag_iot:": "C05GMLDHJTD",
-  ":tag_os:": "C05GF6K8BCN",
-  ":tag_アルゴリズム:": "C05GMLG8MJP",
-  ":tag_データサイエンス:": "C05GMQ16U02",
-  ":tag_ネットワークセキュリティ:": "C05GQ7U1FRA",
-  ":tag_暗号:": "C05GQ801XJQ"
+  ":tag_ai:": "",
+  ":tag_iot:": "",
+  ":tag_os:": "",
+  ":tag_アルゴリズム:": "",
+  ":tag_データサイエンス:": "",
+  ":tag_ネットワークセキュリティ:": "",
+  ":tag_暗号:": ""
 }
 
 def send_dm_to_user(user_id, message):
